@@ -20,5 +20,7 @@ Simple Rest API that proxies calls to two third party apis. Demonstrates the fol
 
 - Some tests are missing
 - there is no docker file
+- instructions for running the service is missing.
+- the documentation about the endpoints is missing.
 
 The plan is to write a rust equivalent to compare the two in every aspect.
