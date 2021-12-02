@@ -13,9 +13,7 @@ import cats.implicits._
 
 object ServiceApp extends IOApp.Simple {
 
-  def serve[F[_]: Async](
-                          service: HttpRoutes[F]
-                        ): Resource[F, Server] = EmberServerBuilder
+  def serve[F[_]: Async](service: HttpRoutes[F]): Resource[F, Server] = EmberServerBuilder
       .default[F]
       .withHttpApp(service.orNotFound)
       .withPort(port"5000")
@@ -35,7 +33,7 @@ object ServiceApp extends IOApp.Simple {
   implicit val console: Console[IO] = Console.make
 
   override def run: IO[Unit] = create[IO].use { server =>
-    console.println(s"Server Has Started at ${server.address}") >>
+    console.println(s"Pokedex server Has Started at ${server.address}") >>
       Async[IO].never[Unit]
   }
 
