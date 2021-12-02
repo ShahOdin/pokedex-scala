@@ -4,7 +4,7 @@
 
 ## Overview
 
-Simple Rest API that proxies calls to two third party apis. Demonstrates the following aspects:
+Simple Rest API that proxies calls to two third party apis. Demonstrates the following aspects of coding in Scala:
 
 - Json serialisation and deserialization
 - Business logic
@@ -13,7 +13,7 @@ Simple Rest API that proxies calls to two third party apis. Demonstrates the fol
 - Http Client
 - Modelling ADTs
 - Testing
-- code organisation
+- Code Organisation
 
 ## Endpoints
 
