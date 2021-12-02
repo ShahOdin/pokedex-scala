@@ -7,6 +7,7 @@
 Simple Rest API that proxies calls to two third party apis. Demonstrates the following aspects:
 
 - Json serialisation and deserialization
+- Business logic
 - Error handling
 - Http Server
 - Http Client
