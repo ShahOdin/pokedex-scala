@@ -16,6 +16,7 @@ object ServiceApp extends IOApp.Simple {
   def serve[F[_]: Async](service: HttpRoutes[F]): Resource[F, Server] = EmberServerBuilder
       .default[F]
       .withHttpApp(service.orNotFound)
+      .withHost(host"0.0.0.0")
       .withPort(port"5000")
       .build
 

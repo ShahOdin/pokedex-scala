@@ -66,7 +66,6 @@ docker compose up
 
 ## Next steps
 
-- Some tests are missing
-- fix the docker setup
+- Some tests are missing. check for #todo in the code.
 
 The plan is to write a rust equivalent to compare the two in every aspect.
