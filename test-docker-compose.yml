@@ -5,9 +5,7 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    command: sbt run
+    command: sbt test
     image: sbt
-    ports:
-      - "5000:5000"
     volumes:
       - "./:/root/build"

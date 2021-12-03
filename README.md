@@ -64,6 +64,24 @@ Assuming you have `docker` installed, from the root directory simply run:
 docker compose up
 ```
 
+## Backend tests
+
+### Local Machine
+
+Assuming you have `sbt` installed locally, from the root directory simply run:
+
+```bash
+sbt test
+```
+
+### Docker
+
+Assuming you have `docker` installed, from the root directory simply run:
+
+```bash
+docker compose -f test-docker-compose.yml up
+```
+
 ## Next steps
 
 - Some tests are missing. check for #todo in the code.
